@@ -27,7 +27,7 @@
 10. B — The Card implementation adds a 2% fee, producing `Paid 510.0 by card`.
 11. B — Strings are immutable; `name` remains `java` and `upperName` refers to `JAVA`.
 12. B — The literal is pooled, and `new String("hello")` creates one additional object: 2 objects total.
-13. B — The length is 6; `letterAt(2)` returns `m` for `Campus` (0-based indexing).
+13. A — The length is 6 and `letterAt(2)` is `m` (`Campus` uses zero-based indexing).
 14. A — The `@` character is at index 4.
 15. B — The default constructor sets title to `Unknown` and price to `0.0`.
 16. A — The parameterized constructor sets title and price to the supplied values.
@@ -51,7 +51,7 @@ An object is the allocated instance containing state; a reference variable store
 A static variable belongs to the class and is shared by all instances, so it suits a visitor counter or common configuration. An instance variable belongs to each object, so it suits a student's name or a wallet's balance, which differs per object.
 
 ### 5. `for`, `while`, and `do-while`
-Use `for` when the number of iterations or the index progression is known, such as traversing an array. Use `while` when repetition depends on a condition and the iteration count may not be known. Use `do-while` when the body must execute at least once, such as prompting for input before validating it.
+Use `for` when the number of iterations or index progression is known, such as traversing an array. Use `while` when repetition depends on a condition and the iteration count may not be known. Use `do-while` when the body must execute at least once, such as prompting for input before validating it.
 
 ### 6. Pass-by-value in Java
 Java passes arguments by value. For primitives, the method receives a copy of the primitive, so changing the parameter does not change the caller's variable. For objects, the copied value is a reference: the method can mutate the referenced object, but reassigning its local reference does not change the caller's reference.
