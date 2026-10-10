@@ -6,4 +6,11 @@
 4. Class Attendance Tracker — count present days and longest streak in one pass.
 5. Busiest Bus Row — sum each grid row and keep the first row in a tie.
 
-The PDF files were uploaded as separate assignments; each solution is provided as a standalone Java program.
+Each program is standalone. Inputs are whitespace-separated; for array problems, enter the item count first, then the array elements. For Busiest Bus Row, enter rows and columns followed by the grid values.
+
+## Complexity summary
+- Second-Best Score: O(n) time, O(1) auxiliary space; sorting would take O(n log n).
+- Exam Score Band Counter: O(log n) time, O(1) auxiliary space; linear scanning takes O(n).
+- Duty Roster Rotation: O(n) time and O(n) extra space for the rotated result, independent of the magnitude of k.
+- Class Attendance Tracker: O(n) time, O(1) auxiliary space.
+- Busiest Bus Row: O(r × c) time, O(1) auxiliary space beyond the input grid.
